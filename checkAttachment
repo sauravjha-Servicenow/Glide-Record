@@ -1,0 +1,13 @@
+// Check for attachments and add link if there are any.
+
+var attachment_link = '';
+var rec = new GlideRecord('sc_req_item');
+rec.addQuery('sys_id', '349de79e83d4125051a6c530ceaad308');
+rec.query();
+
+if(rec.next()){
+    if(rec.hasAttachments()){
+        attachment_link = gs.getProperty('glide.servlet.uri') + rec.getLink();
+    }
+}
+gs.info(attachment_link);
