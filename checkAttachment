@@ -1,3 +1,9 @@
+/*  Introduction
+The hasAttachment() function in ServiceNow is used to check if a record has any attachments. 
+This can be particularly useful in business rules, UI actions, or other server-side scripts where you need to perform actions based on the presence of attachments.
+*/
+
+
 // Check for attachments and add link if there are any.
 
 var attachment_link = '';
